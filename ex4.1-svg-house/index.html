@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4.1 - SVG House</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Exercise 4.1: SVG House</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>My house and garden</h2>
+      <svg id="house" width="600" height="400" viewBox="0 0 600 400">
+        <rect class="sky" x="0" y="0" width="600" height="300" />
+        <rect class="grass" x="0" y="300" width="600" height="100" />
+
+        <circle class="sun" cx="520" cy="70" r="40" />
+        <ellipse class="cloud" cx="150" cy="70" rx="60" ry="25" />
+        <ellipse class="cloud" cx="200" cy="60" rx="45" ry="20" />
+
+        <rect class="chimney" x="340" y="95" width="30" height="60" />
+        <rect class="wall" x="180" y="170" width="220" height="150" />
+        <polygon class="roof" points="160,170 290,80 420,170" />
+
+        <rect class="door" x="270" y="240" width="40" height="80" />
+        <circle class="knob" cx="302" cy="282" r="3" />
+
+        <g class="windows">
+          <g transform="translate(200, 200)">
+            <rect width="50" height="40" />
+            <line x1="25" y1="0" x2="25" y2="40" />
+            <line x1="0" y1="20" x2="50" y2="20" />
+          </g>
+          <g transform="translate(330, 200)">
+            <rect width="50" height="40" />
+            <line x1="25" y1="0" x2="25" y2="40" />
+            <line x1="0" y1="20" x2="50" y2="20" />
+          </g>
+        </g>
+
+        <path class="garden-path" d="M270 320 Q250 360 225 400 L355 400 Q330 360 310 320 Z" />
+
+        <polyline class="fence" points="20,340 40,315 60,340 80,315 100,340 120,315 140,340" />
+
+        <rect class="trunk" x="480" y="230" width="20" height="90" />
+        <circle class="leaves" cx="490" cy="210" r="40" />
+
+        <line class="ground" x1="0" y1="300" x2="600" y2="300" />
+
+        <text class="title" x="30" y="385">Giang's House</text>
+      </svg>
+    </section>
+
+    <section>
+      <h2>SVG coordinate system (annotated)</h2>
+      <img src="images/house-annotated.png" alt="Annotated screenshot of the SVG house showing coordinates of each shape">
+    </section>
+
+    <section>
+      <h2>SVG and the DOM</h2>
+      <img src="images/house-dom.png" alt="Screenshot of the SVG with the DOM in browser developer tools">
+    </section>
+  </main>
+
+  <footer>
+    <p>COS30045 Data Visualisation</p>
+  </footer>
+</body>
+</html>
