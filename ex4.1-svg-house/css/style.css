@@ -45,3 +45,8 @@ svg, img {
 .ground { stroke: #3d7a29; stroke-width: 2; stroke-dasharray: 8 4; }
 
 .title { font-size: 22px; font-weight: bold; fill: white; }
+
+nav a {
+  color: white;
+  margin-right: 15px;
+}
